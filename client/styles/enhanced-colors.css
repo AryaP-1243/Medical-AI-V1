@@ -1,0 +1,118 @@
+/* Enhanced Beautiful White Color System */
+:root {
+  /* Exquisite white shades for maximum elegance */
+  --white-pure: 0 0% 100%;           /* Pure white for highlights */
+  --white-pearl: 210 15% 98%;        /* Pearl white - premium feel */
+  --white-cream: 210 12% 95%;        /* Cream white - primary text */
+  --white-silk: 210 10% 92%;         /* Silk white - elegant readability */
+  --white-dove: 210 8% 88%;          /* Dove white - secondary text */
+  --white-silver: 210 6% 82%;        /* Silver white - tertiary */
+  --white-mist: 210 5% 75%;          /* Mist white - muted text */
+  --white-ash: 210 4% 65%;           /* Ash white - subtle elements */
+  
+  /* Glass morphism colors */
+  --glass-white: 0 0% 100% / 0.04;   /* Ultra-subtle glass background */
+  --glass-border: 0 0% 100% / 0.08;  /* Delicate glass borders */
+  --glass-strong: 0 0% 100% / 0.06;  /* Stronger glass for emphasis */
+  --glass-border-strong: 0 0% 100% / 0.12; /* Enhanced borders */
+}
+
+/* Beautiful white text classes */
+.text-pure-white { color: hsl(var(--white-pure)); }
+.text-pearl-white { color: hsl(var(--white-pearl)); }
+.text-cream-white { color: hsl(var(--white-cream)); }
+.text-silk-white { color: hsl(var(--white-silk)); }
+.text-dove-white { color: hsl(var(--white-dove)); }
+.text-silver-white { color: hsl(var(--white-silver)); }
+.text-mist-white { color: hsl(var(--white-mist)); }
+.text-ash-white { color: hsl(var(--white-ash)); }
+
+/* Enhanced glass morphism backgrounds */
+.bg-glass-white { background: hsl(var(--glass-white)); }
+.bg-glass-strong { background: hsl(var(--glass-strong)); }
+.border-glass-white { border-color: hsl(var(--glass-border)); }
+.border-glass-strong { border-color: hsl(var(--glass-border-strong)); }
+
+/* Premium glass card effect */
+.glass-card {
+  background: hsl(var(--glass-white));
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid hsl(var(--glass-border));
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-card:hover {
+  background: hsl(var(--glass-strong));
+  border-color: hsl(var(--glass-border-strong));
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Enhanced button with beautiful whites */
+.btn-glass {
+  background: linear-gradient(135deg, 
+    hsl(var(--glass-white)), 
+    hsl(var(--glass-strong))
+  );
+  border: 1px solid hsl(var(--glass-border));
+  color: hsl(var(--white-cream));
+  backdrop-filter: blur(20px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-glass:hover {
+  background: linear-gradient(135deg, 
+    hsl(var(--glass-strong)), 
+    hsl(var(--glass-white))
+  );
+  border-color: hsl(var(--glass-border-strong));
+  color: hsl(var(--white-pearl));
+  transform: translateY(-1px);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced input fields */
+.input-glass {
+  background: hsl(var(--glass-white));
+  border: 1px solid hsl(var(--glass-border));
+  color: hsl(var(--white-cream));
+  backdrop-filter: blur(16px);
+}
+
+.input-glass:focus {
+  background: hsl(var(--glass-strong));
+  border-color: hsl(var(--glass-border-strong));
+  color: hsl(var(--white-pearl));
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+}
+
+.input-glass::placeholder {
+  color: hsl(var(--white-mist));
+}
+
+/* Beautiful text shadows for premium feel */
+.text-shadow-elegant {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-glow {
+  text-shadow: 
+    0 0 20px rgba(255, 255, 255, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced gradient text */
+.gradient-elegant-white {
+  background: linear-gradient(135deg, 
+    hsl(var(--white-pearl)), 
+    hsl(var(--white-dove)),
+    hsl(var(--white-silver))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
